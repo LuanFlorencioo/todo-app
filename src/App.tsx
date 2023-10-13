@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { AppContainer, Header, Todo } from './components'
 import { themeStore, todoStore } from './stores'
 import iconSun from './assets/icons/icon-sun.svg'
-import iconMoon from './assets/icon/icon-moon.svg'
+import iconMoon from './assets/icons/icon-moon.svg'
 
 export default function App() {
   const [inputValue, setInputValue] = useState('')
