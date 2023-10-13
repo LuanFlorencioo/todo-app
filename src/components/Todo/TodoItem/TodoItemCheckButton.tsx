@@ -1,3 +1,5 @@
+import iconCheck from './../../../assets/icons/icon-check.svg'
+
 interface TodoItemCheckButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isCompleted: boolean,
 }
@@ -9,7 +11,7 @@ export default function TodoItemCheckButton({ isCompleted, ...rest }: TodoItemCh
     >
       {
         isCompleted && (
-          <img src="/src/assets/icons/icon-check.svg" alt="Icon Check" />
+          <img src={iconCheck} alt="Icon Check" />
         )
       }
     </button>
