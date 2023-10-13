@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { AppContainer, Header, Todo } from './components'
 import { themeStore, todoStore } from './stores'
+import iconSun from './assets/icons/icon-sun.svg'
+import iconMoon from './assets/icon/icon-moon.svg'
 
 export default function App() {
   const [inputValue, setInputValue] = useState('')
@@ -40,7 +42,7 @@ export default function App() {
       <Header.Root>
         <Header.Logo />
         <Header.SwitcherTheme
-          iconPath={`/src/assets/icons/icon-${theme === "dark" ? "sun" : "moon"}.svg`}
+          iconPath={theme === "dark" ? iconSun : iconMoon}
           onClick={() => changeTheme(theme === "dark" ? "light" : "dark")}
         />
       </Header.Root>
