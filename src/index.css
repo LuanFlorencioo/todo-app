@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, button, a {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  .gradient {
+    @apply bg-gradient-to-br from-[#57DDFF] to-[#C058F3]
+  }
+}
